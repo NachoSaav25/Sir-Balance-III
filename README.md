@@ -17,10 +17,7 @@ Proyecto final del curso **ME4250-1 Mecatrónica** · Universidad de Chile · FC
 ---
 
 ## Prototipo
-
-<!-- Reemplazar con imágenes reales del prototipo una vez subidas al repositorio -->
-> *Agregar aquí imágenes representativas del robot y de los resultados experimentales.*
-> Ejemplo: `![Sir Balance III](Avance 3 Mecatrónica/Fotos Prototipo Avance 3/PHOTO-2026-06-22-11-16-01 (1))`
+![Sir Balance III](Avance%203%20Mecatrónica/Fotos%20Prototipo%20Avance%203/PHOTO-2026-06-22-11-16-01%20(1).jpg)
 
 ---
 
