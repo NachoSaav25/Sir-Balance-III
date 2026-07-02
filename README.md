@@ -23,9 +23,11 @@ Proyecto final del curso **ME4250-1 Mecatrónica** · Universidad de Chile · FC
 
 ## Descripción del proyecto
 
-Sir Balance III es un robot autobalanceado de dos ruedas que resuelve el problema clásico del péndulo invertido: un sistema inherentemente inestable que requiere control activo y continuo para mantenerse en pie. Su desarrollo integró disciplinas de diseño mecánico, electrónica embebida y teoría de control, constituyendo una plataforma de aprendizaje mecatrónico completa.
+Sir Balance III es un robot autobalanceado de dos ruedas que resuelve el problema del péndulo invertido, a través de un sistema inherentemente inestable que requiere control activo y continuo para mantenerse en pie. Para su desarrollo se combinó el diseño mecánico, la electrónica y teoría de control, constituyendo una plataforma de aprendizaje mecatrónico completa.
 
-El sistema utiliza un sensor **MPU-6050** (acelerómetro + giroscopio) para medir el ángulo de inclinación en tiempo real mediante fusión sensorial con filtro complementario. Un **Arduino UNO R3** ejecuta un algoritmo **PID a 100 Hz** para mantener el equilibrio, comandando dos motores DC a través de un driver L298N. La estructura física fue diseñada en Fusion 360 y construida en madera con accesorios impresos en 3D, incluyendo un sombrero de copa y mostacho como estética de época.
+El sistema utiliza un sensor **MPU-6050** (acelerómetro + giroscopio) para medir el ángulo de inclinación en tiempo real mediante fusión sensorial con filtro complementario. Un **Arduino UNO R3** ejecuta un algoritmo **PID a 100 Hz** para mantener el equilibrio, comandando dos motores DC a través de un driver L298N. 
+
+La estructura física fue diseñada en Fusion 360 y construida en madera con accesorios impresos en 3D, incluyendo un sombrero de copa y mostacho como estética de época y respetando de esa manera la temática rústica.
 
 ### Hardware
 
@@ -61,11 +63,9 @@ El sistema utiliza un sensor **MPU-6050** (acelerómetro + giroscopio) para medi
 
 ## Conclusiones
 
-Se diseñó, fabricó y sintonizó exitosamente Sir Balance III, un robot balancín de dos ruedas capaz de mantener equilibrio de forma autónoma mediante control PID.
+Fue posible diseñar, fabricar y sintonizar exitosamente a Sir Balance III, un robot balancín de dos ruedas capaz de mantener equilibrio de forma autónoma mediante control PID. Esto fue posible gracias al método de Ziegler–Nichols, el cual entegró un punto de partida útil (Kp=2,7), aunque los valores teóricos resultaron inestables y requirieron de un ajuste iterativo manual hasta llegar a Ki=0,002 y Kd=0,029. La zona muerta de los motores (PWM≈100/255) fue un desafío crítico, resuelto con mapeo lineal de la salida PID al rango [100–255] y una banda muerta angular de 0,5°.
 
-El método de Ziegler–Nichols proveyó un punto de partida útil (Kp=2,7), aunque los valores teóricos resultaron inestables y requirieron ajuste iterativo manual hasta llegar a Ki=0,002 y Kd=0,029. La zona muerta de los motores (PWM≈100/255) fue un desafío crítico, resuelto con mapeo lineal de la salida PID al rango [100–255] y una banda muerta angular de 0,5°.
-
-El proceso iterativo de tres avances demostró que el diseño mecánico, la elección de componentes y el algoritmo de control deben concebirse como un sistema unificado, donde cada decisión afecta el desempeño global.
+Asimismo, gracias a los tres avances a lo largo del semestre donde existieron estas iteraciones y cambios, se demostró que el diseño mecánico, la elección de componentes y el algoritmo de control deben ser vistas como un todo, donde cada decisión afecta el desempeño global de este robot.
 
 ---
 
