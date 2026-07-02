@@ -59,14 +59,6 @@ El sistema utiliza un sensor **MPU-6050** (acelerómetro + giroscopio) para medi
 
 ---
 
-## Diagrama de conexiones
-
-<!-- Reemplazar con imagen del diagrama una vez subida al repositorio -->
-> *Agregar aquí el diagrama de conexiones electrónicas.*
-> Ejemplo: `![Diagrama de conexiones](diagramas/conexiones.png)`
-
----
-
 ## Conclusiones
 
 Se diseñó, fabricó y sintonizó exitosamente Sir Balance III, un robot balancín de dos ruedas capaz de mantener equilibrio de forma autónoma mediante control PID.
