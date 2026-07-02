@@ -1,7 +1,7 @@
 # Robot Balancín — Sir Balance III
 ### Diseño, Fabricación y Control PID de un Péndulo Invertido Autobalanceado
 
-Proyecto final del curso **ME4250-1 Mecatrónica** · Universidad de Chile · FCFM · DIMEC · 2025
+Proyecto final del curso **ME4250-1 Mecatrónica** · Universidad de Chile · FCFM · DIMEC · 2026
 
 ---
 
